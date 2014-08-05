@@ -13,6 +13,8 @@
 		7CBA48F61990BF3D00EEC095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBA48F41990BF3D00EEC095 /* Main.storyboard */; };
 		7CBA48F81990BF3D00EEC095 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBA48F71990BF3D00EEC095 /* Images.xcassets */; };
 		7CBA49041990BF3D00EEC095 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA49031990BF3D00EEC095 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */; };
+		7CBA49151990D63A00EEC095 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA49141990D63A00EEC095 /* SignInViewController.m */; };
+		7CBA49181990D67800EEC095 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA49171990D67800EEC095 /* CreateAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		7CBA48FD1990BF3D00EEC095 /* NSUserDefaults, Segues and Protocols Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaults, Segues and Protocols Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBA49021990BF3D00EEC095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CBA49031990BF3D00EEC095 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		7CBA49131990D63A00EEC095 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		7CBA49141990D63A00EEC095 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		7CBA49161990D67800EEC095 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		7CBA49171990D67800EEC095 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 				7CBA48F11990BF3D00EEC095 /* ViewController.h */,
 				7CBA48F21990BF3D00EEC095 /* ViewController.m */,
 				7CBA48F41990BF3D00EEC095 /* Main.storyboard */,
+				7CBA49131990D63A00EEC095 /* SignInViewController.h */,
+				7CBA49141990D63A00EEC095 /* SignInViewController.m */,
+				7CBA49161990D67800EEC095 /* CreateAccountViewController.h */,
+				7CBA49171990D67800EEC095 /* CreateAccountViewController.m */,
 				7CBA48F71990BF3D00EEC095 /* Images.xcassets */,
 				7CBA48EA1990BF3D00EEC095 /* Supporting Files */,
 			);
@@ -215,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBA49151990D63A00EEC095 /* SignInViewController.m in Sources */,
 				7CBA48F31990BF3D00EEC095 /* ViewController.m in Sources */,
+				7CBA49181990D67800EEC095 /* CreateAccountViewController.m in Sources */,
 				7CBA48F01990BF3D00EEC095 /* AppDelegate.m in Sources */,
 				7CBA48ED1990BF3D00EEC095 /* main.m in Sources */,
 			);
@@ -402,6 +414,7 @@
 				7CBA49091990BF3D00EEC095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CBA490A1990BF3D00EEC095 /* Build configuration list for PBXNativeTarget "NSUserDefaults, Segues and Protocols Challenge SolutionTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +423,7 @@
 				7CBA490C1990BF3D00EEC095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
