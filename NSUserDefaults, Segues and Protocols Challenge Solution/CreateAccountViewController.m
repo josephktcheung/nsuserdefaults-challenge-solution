@@ -36,6 +36,11 @@
 
 - (IBAction)createAccountButtonPressed:(UIButton *)sender
 {
+    [[NSUserDefaults standardUserDefaults]setValue:self.usernameTextField.text forKey:USER_NAME];
+    [[NSUserDefaults standardUserDefaults]setValue:self.passwordTextField.text forKey:USER_PASSWORD];
+    
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults]objectForKey:USER_NAME]);
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults]objectForKey:USER_PASSWORD]);
     [self.delegate didCreateAccount];
 }
 
