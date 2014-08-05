@@ -10,4 +10,10 @@
 
 @interface CreateAccountViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
+
+- (IBAction)createAccountButtonPressed:(UIButton *)sender;
+- (IBAction)cancelButtonPressed:(UIButton *)sender;
 @end

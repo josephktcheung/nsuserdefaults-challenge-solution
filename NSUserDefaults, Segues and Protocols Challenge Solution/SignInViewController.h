@@ -10,4 +10,10 @@
 
 @interface SignInViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)loginButtonPressed:(UIButton *)sender;
+- (IBAction)createAccountBarButtonItemPressed:(UIBarButtonItem *)sender;
+
 @end

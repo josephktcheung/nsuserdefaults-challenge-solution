@@ -31,6 +31,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="hiD-Ce-z8f" eventType="touchUpInside" id="0K3-Cf-XXa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,9 +49,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="bXr-6p-uRM">
-                        <barButtonItem key="rightBarButtonItem" title="Create Account" id="hHX-Ns-o5M"/>
+                        <barButtonItem key="rightBarButtonItem" title="Create Account" id="hHX-Ns-o5M">
+                            <connections>
+                                <action selector="createAccountBarButtonItemPressed:" destination="hiD-Ce-z8f" id="3Vv-pp-Phi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="passwordTextField" destination="TtL-O2-QWN" id="x3O-yH-rJS"/>
+                        <outlet property="usernameTextField" destination="5Md-K1-JXg" id="w4e-MQ-kpO"/>
                         <segue destination="sZ7-z3-mNw" kind="presentation" identifier="toCreateAccountViewControllerSegue" id="gHg-Dh-HXH"/>
                         <segue destination="vXZ-lx-hvc" kind="presentation" identifier="toViewControllerSegue" id="b7n-Hv-1xj"/>
                     </connections>
@@ -89,12 +98,18 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="sZ7-z3-mNw" eventType="touchUpInside" id="JdO-qV-Eda"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbF-Ax-hM4">
                                 <rect key="frame" x="412" y="190" width="48" height="30"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="sZ7-z3-mNw" eventType="touchUpInside" id="7R3-h8-x4p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,6 +129,11 @@
                             <constraint firstItem="b6f-Gk-TVM" firstAttribute="leading" secondItem="Pt9-F4-aUu" secondAttribute="leading" constant="20" id="ygO-Sd-JjZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="b6f-Gk-TVM" id="ChC-9O-GDp"/>
+                        <outlet property="passwordTextField" destination="koG-5n-rSw" id="8A9-2Q-e1u"/>
+                        <outlet property="usernameTextField" destination="6mx-VC-5tA" id="5qL-Em-K0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEk-RS-cJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,6 +196,10 @@
                             <constraint firstItem="89I-Kw-AUf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="nG5-aF-A4X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="TLH-vK-SDh" id="kJ0-2f-d79"/>
+                        <outlet property="usernameLabel" destination="oHd-eV-MpM" id="pfE-Ud-iNr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
