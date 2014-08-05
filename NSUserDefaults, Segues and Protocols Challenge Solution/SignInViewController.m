@@ -31,6 +31,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.destinationViewController isKindOfClass:[CreateAccountViewController class]]) {
+        CreateAccountViewController *createAccountVC = segue.destinationViewController;
+        createAccountVC.delegate = self;
+    }
     
 }
 
@@ -43,4 +47,17 @@
 {
     [self performSegueWithIdentifier:@"toCreateAccountViewControllerSegue" sender:sender];
 }
+
+#pragma mark - CreateAccountViewController Delegate
+
+- (void)didCancel
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)didCreateAccount
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
