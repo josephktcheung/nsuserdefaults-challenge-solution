@@ -47,7 +47,7 @@
     
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults]objectForKey:USER_NAME]);
     NSLog(@"%@", [[NSUserDefaults standardUserDefaults]objectForKey:USER_PASSWORD]);
-//    [self.delegate didCreateAccount];
+    [self.delegate didCreateAccount];
 }
 
 - (IBAction)cancelButtonPressed:(UIButton *)sender
