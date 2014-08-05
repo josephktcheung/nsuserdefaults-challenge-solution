@@ -35,7 +35,6 @@
         CreateAccountViewController *createAccountVC = segue.destinationViewController;
         createAccountVC.delegate = self;
     }
-    
 }
 
 - (IBAction)loginButtonPressed:(UIButton *)sender
@@ -49,7 +48,6 @@
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username / password is incorrect" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
     }
-
 }
 
 - (IBAction)createAccountBarButtonItemPressed:(UIBarButtonItem *)sender
